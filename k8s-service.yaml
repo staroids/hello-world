@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: public
+spec:
+  ports:
+  - name: http
+    port: 8080
+    targetPort: 2222
+  selector:
+    app: hello-world

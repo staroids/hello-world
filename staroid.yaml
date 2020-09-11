@@ -1,0 +1,9 @@
+# Staroid configuration file
+# Reference https://docs.staroid.com/references/staroid_yaml.html
+apiVersion: beta/v1
+build:
+  skaffold:
+    file: skaffold.yaml
+ingress:
+  - serviceName: public
+    port: 8080
